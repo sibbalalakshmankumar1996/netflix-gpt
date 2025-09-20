@@ -1,12 +1,12 @@
 .login-form-container {
-    background-image: url(http://localhost:3000/static/media/movies-with-bg.989c87722b8bb5c4c39c.jpg);
+    background-image: url("../../public/assets/images/movies-with-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
     display: flex;
     align-items: center;
 }
-body::before{
+.login-form-container::before{
     position: absolute;
     content: "";
     top: 0;
@@ -15,8 +15,14 @@ body::before{
     right: 0;
 background-color: rgba(0,0,0,0.6);
 }
-.header-wrap{
+.header-wrap {
     position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    box-shadow: rgba(33, 35, 38, 0.4) 0px 10px 10px -10px;
 }
 .netflix-logo {
     width: 180px;
@@ -28,4 +34,21 @@ background-color: rgba(0,0,0,0.6);
     position: relative;
     width: 500px;
     margin: 0 auto;
+}
+.logout-btn{
+    max-height: 45px;
+}
+.profile-wrap{
+    display:flex;
+    align-items: center;
+}
+.user-email {
+    padding-left: 12px;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+.header-right-wrap {
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
 }
